@@ -16,13 +16,10 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 	{
 		return (NULL);
 	}
-	else
-	{
 		nbtnode->n = value;
 		nbtnode->parent = parent;
 		nbtnode->right = NULL;
 		nbtnode->left = NULL;
 
 		return (nbtnode);
-	}
 }
