@@ -21,19 +21,19 @@ size_t binary_tree_height(const binary_tree_t *tree)
 	{
 		if (tree->left != NULL)
 		{
-			leftHght = binary_tree_height(tree->left);
+			leftHght = binary_tree_height(tree->left) + 1;
 		}
 		if (tree->right != NULL)
 		{
-			rightHght = binary_tree_height(tree->right);
+			rightHght = binary_tree_height(tree->right) + 1;
 		}
-		if (leftHght > rightHght)
+		if (leftHght < rightHght)
 		{
-			return (leftHght + 1);
+			return (rightHght);
 		}
 		else
 		{
-			return (rightHght + 1);
+			return (leftHght);
 		}
 	}
 }
