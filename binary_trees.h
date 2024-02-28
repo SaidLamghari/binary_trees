@@ -32,6 +32,7 @@ typedef struct binary_tree_s heap_t;
 
 typedef struct binary_tree_s avl_t;
 
+void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
 
 int binary_tree_is_root(const binary_tree_t *node);
 
