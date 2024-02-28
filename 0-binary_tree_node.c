@@ -30,9 +30,8 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 		newbtnode->left = NULL;
 
 		newbtnode->right = NULL;
+		return (newbtnode);
 
 	}
-
-	return (newbtnode);
 
 }
