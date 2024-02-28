@@ -22,7 +22,7 @@ struct binary_tree_s
 
 typedef struct binary_tree_s binary_tree_t;
 
-
+size_t binary_tree_height(const binary_tree_t *tree);
 
 void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
 
