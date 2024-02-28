@@ -9,20 +9,20 @@
  **/
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
-	binary_tree_t *newbtnode;
+	binary_tree_t *nbtnode;
 
-	newbtnode = malloc(sizeof(binary_tree_t));
-	if (newbtnode == NULL)
+	nbtnode = malloc(sizeof(binary_tree_t));
+	if (nbtnode == NULL)
 	{
 		return (NULL);
 	}
 	else
 	{
-		newbtnode->n = value;
-		newbtnode->parent = parent;
-		newbtnode->right = NULL;
-		newbtnode->left = NULL;
+		nbtnode->n = value;
+		nbtnode->parent = parent;
+		nbtnode->right = NULL;
+		nbtnode->left = NULL;
 
-		return (newbtnode);
+		return (nbtnode);
 	}
 }
