@@ -27,9 +27,9 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 
 		newBTnode->parent = parent;
 
-		newBTnode->right = NULL;
-
 		newBTnode->left = NULL;
+
+		newBTnode->right = NULL;
 
 	}
 
