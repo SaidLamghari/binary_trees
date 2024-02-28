@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include "binary_trees.h"
 
-
 /**
  * binary_tree_node - Function that creates a B.T. node.
  * @parent: Pointer to the parent node .
@@ -23,7 +22,7 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 		newbtnode->parent = parent;
 		newbtnode->right = NULL;
 		newbtnode->left = NULL;
-		
+
 		return (newbtnode);
 	}
 }
