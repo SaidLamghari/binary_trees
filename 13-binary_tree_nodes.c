@@ -22,12 +22,12 @@ size_t binary_tree_nodes(const binary_tree_t *tree)
 	}
 	else
 	{
-		/*if (tree->right != NULL)*/
+		if (tree->right != NULL || tree->left != NULL)
+		{
 			valRight = binary_tree_nodes(tree->right);
 
-		/*if (tree->left != NULL)*/
 			valLeft = binary_tree_nodes(tree->left);
-
+		}
 		total = valLeft + valRight + 1;
 		return (total);
 	}
