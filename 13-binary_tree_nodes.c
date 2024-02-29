@@ -27,9 +27,11 @@ size_t binary_tree_nodes(const binary_tree_t *tree)
 			valRight = binary_tree_nodes(tree->right);
 
 			valLeft = binary_tree_nodes(tree->left);
+
+			total = valLeft + valRight + 1;
+
+			return (total);
 		}
-		total = valLeft + valRight + 1;
-		return (total);
 	}
 
 	return (0);
